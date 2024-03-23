@@ -285,8 +285,22 @@ body {
   /* section-colection */
 
   .section-colection {
-    padding: 50px 15px;
+    padding: 50px 0;
     background-image: url(../images/colection/mob-colection.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media only screen and (min-resolution: 192dpi) {
+    .section-colection {
+      background-image: url(../images/colection/mob-colection@2x.png) ;
+  }
+  }
+  .container-colection {
+    padding: 0 15px;
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
   }
   .section-title-colection {
     font-weight: inherit;
@@ -298,13 +312,14 @@ body {
   }
   .wraper-title {
     display: flex;
- 
+    justify-content: start;
     gap: 10px;
   }
   .icon-colection {
     fill: transparent;
     stroke: var(--c-background-button-learn);
-    flex-grow: 1;
+    width: 50px;
+    height: 50px;
   }
 
   .colection-text {
@@ -402,9 +417,33 @@ body {
   .card-list-img {
     margin-bottom: 15px;
   }
-  
-  }
 
+  
+  .section-colection {
+    padding: 50px 0 40px;
+    background-image: url(../images/colection/tab-colection510.png);
+
+  }
+  @media only screen and (min-resolution: 192dpi) {
+    .section-colection {
+      background-image: url(../images/colection/tab-colection510@2x.png) ;
+  }
+  }
+  .container-colection {
+    padding: 0 32px;
+    max-width: 576px;
+  }
+  .section-title-colection {
+    width: 260px;
+  }
+  .colection-text {
+    margin-bottom: 20px;
+  }
+  .colection-link {
+    display: inline-block;
+    padding: 20px 35px;
+  }
+  }
 
   @media screen and (min-width: 768px) {
 
@@ -490,6 +529,30 @@ body {
 .card-link {
   font-size: 20px;
 }
+
+.section-colection {
+  padding: 70px 0;
+  background-image: url(../images/colection/tab-colection768.png);
+
+}
+@media only screen and (min-resolution: 192dpi) {
+  .section-colection {
+    background-image: url(../images/colection/tab-colection768@2x.png) ;
+}
+}
+.container-colection {
+  padding: 0 40px;
+  max-width: 768px;
+}
+.section-title-colection {
+  font-size: 30px;
+  width: 370px;
+}
+.colection-text {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
   }
 
   @media screen and (min-width: 1200px) {
@@ -524,4 +587,36 @@ body {
   .section-title {
     font-size: 40px;
   }
+  
+.section-colection {
+  padding: 70px 0;
+  background-image: url(../images/colection/desk.png);
+
+}
+@media only screen and (min-resolution: 192dpi) {
+  .section-colection {
+    background-image: url(../images/colection/desk@2x.png) ;
+}
+.icon-colection {
+  width: 60px;
+  height: 60px;
+}
+}
+.container-colection {
+  max-width: 1200px;
+}
+.section-title-colection {
+  font-size: 40px;
+  width: 420px;
+}
+.colection-text {
+  font-size: 18px;
+  margin-bottom: 30px;
+  width: 540px;
+}
+.colection-link {
+  padding: 22px 60px;
+  margin-top: 30px;
+  font-size: 20px;
+}
   }
