@@ -20,6 +20,9 @@ body {
     background-color: var(--c-background-white);
     margin: 0;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   ul {
     list-style-type: none;
     margin: 0;
@@ -104,6 +107,7 @@ body {
     background-color: var(--c-background-secondary);
   }
   .nav-item {
+    color: inherit;
     font-size: 18px;
     line-height: 1.16;
   }
@@ -291,6 +295,9 @@ body {
   }
   @media only screen and (min-resolution: 192dpi) {
     .section-colection {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
       background-image: url(../images/colection/mob-colection@2x.jpg) ;
   }
   }
@@ -845,7 +852,8 @@ footer {
 }
 }
 .container-colection {
-  max-width: 1200px;
+  max-width: 1440px;
+  padding: 0 165px;
 }
 .section-title-colection {
   font-size: 40px;
