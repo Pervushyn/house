@@ -254,10 +254,20 @@
         <section class="team">
             <div class="container">
                 <div class="team-wrapper">
-                    <div class="team-wrap-picture">
-                        <img class="team-img" src="./images/team/picture.png" alt="picture">
-                        <img class="team-img-absol" src="./images/team/Layer.png" alt="Layer">
-                    </div>
+                    <picture>
+                        <source media="(min-width: 1200px)"   
+                                srcset="./images/team/picture/desk-picture.png 1x, ./images/team/picture/desk-picture@2x.png 2x">
+
+                                <source media="(min-width: 768px)"   
+                                srcset="./images/team/picture/tab-picture768.png 1x, ./images/team/picture/tab-picture768@2x.png 2x">
+
+                                <source media="(min-width: 576px)"   
+                                srcset="./images/team/picture/tab-picture510.png 1x, ./images/team/picture/tab-picture510@2x.png 2x">
+
+                        <source media="(max-width:374.8px)"
+                        srcset="./images/team/picture/desk-picture.png 1x, ./images/team/picture/desk-picture@2x.png 2x">
+                        <img class="team-img" src="./images/team/picture/desk-picture.png" alt="picture">
+                    </picture>
                     <div class="team-content">
                         <div>
                             <h2 class="section-title">Наша команда</h2>

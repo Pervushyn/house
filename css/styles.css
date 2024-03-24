@@ -130,7 +130,7 @@ body {
   
   /* hero-section */
   .hero-section {
-    padding: 60px 15px 30px;
+    padding: 60px 0 0;
   }
 
   .container {
@@ -156,7 +156,6 @@ body {
   .hero-text {
     font-size: 14px;
     line-height: 1.5;
-    letter-spacing: 0.04em;
     color: var(--c-text-grey);
     margin-bottom: 40px;
   }
@@ -286,15 +285,15 @@ body {
 
   .section-colection {
     padding: 50px 0;
-    background-image: url(../images/colection/mob-colection.png);
+    background-image: url(../images/colection/mob-colection.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(grey, black);
+    background: linear-gradient(grey, black);
   }
   @media only screen and (min-resolution: 192dpi) {
     .section-colection {
-      background-image: url(../images/colection/mob-colection@2x.png) ;
+      background-image: url(../images/colection/mob-colection@2x.jpg) ;
   }
   }
   .container-colection {
@@ -345,7 +344,7 @@ body {
 
    /* team section */
   .team {
-    padding: 112px 0 94px;
+    padding: 60px 0 94px;
 
   }
   .team-wrapper {
@@ -353,17 +352,10 @@ body {
     flex-direction: column;
     gap: 30px;
   }
-  .team-wrap-picture {
-    position: relative;
-  }
   .team-img {
-    text-align: center;
+    width: 290px;
   }
-  .team-img-absol {
-    position: absolute;
-    bottom: 13%;
-    left: 32px;
-  }
+  
   .team-text {
     font-size: 16px;
     line-height: 1.4;
@@ -423,10 +415,10 @@ body {
   }
 
   .hero-section {
-    padding: 50px 0px 25px;
+    padding: 50px 0px 0px;
   }
   .section {
-    padding: 25px 0 50px;
+    padding: 50px 0;
   }
   .container {
     max-width: 576px;
@@ -459,12 +451,12 @@ body {
   
   .section-colection {
     padding: 50px 0 40px;
-    background-image: url(../images/colection/tab-colection510.png);
+    background-image: url(../images/colection/tab-colection510.jpg);
 
   }
   @media only screen and (min-resolution: 192dpi) {
     .section-colection {
-      background-image: url(../images/colection/tab-colection510@2x.png) ;
+      background-image: url(../images/colection/tab-colection510@2x.jpg) ;
   }
   }
   .container-colection {
@@ -481,6 +473,18 @@ body {
     display: inline-block;
     padding: 20px 35px;
   }
+
+  .team {
+    padding: 50px 0;
+
+  }
+  .team-img {
+    width: 375px;
+  }
+  .team-photo {
+    justify-content: start;
+    gap: 30px;
+}
   }
 
   @media screen and (min-width: 768px) {
@@ -503,10 +507,10 @@ body {
   gap: 60px;
 }
 .hero-section {
-  padding: 0px 0px 35px;
+  padding: 0;
 }
 .section {
-  padding: 35px 0 70px;
+  padding: 70px 0;
 }
 .container {
   max-width: 768px;
@@ -570,12 +574,12 @@ body {
 
 .section-colection {
   padding: 70px 0;
-  background-image: url(../images/colection/tab-colection768.png);
+  background-image: url(../images/colection/tab-colection768.jpg);
 
 }
 @media only screen and (min-resolution: 192dpi) {
   .section-colection {
-    background-image: url(../images/colection/tab-colection768@2x.png) ;
+    background-image: url(../images/colection/tab-colection768@2x.jpg) ;
 }
 }
 .container-colection {
@@ -590,7 +594,24 @@ body {
   font-size: 18px;
   margin-bottom: 30px;
 }
+.team {
+  padding: 70px 0;
 
+}
+.team-wrapper {
+  gap: 40px;
+}
+.team-img {
+  width: 510px;
+}
+.team-text {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.team-content {
+  gap: 30px;
+}
   }
 
   @media screen and (min-width: 1200px) {
@@ -608,7 +629,7 @@ body {
   }
   .container {
     max-width: 1440px;
-    padding: 0 165px 35px;
+    padding: 0 165px;
   }
   .hero-title {
     font-size: 60px;
@@ -628,12 +649,12 @@ body {
   
 .section-colection {
   padding: 70px 0;
-  background-image: url(../images/colection/desk.png);
+  background-image: url(../images/colection/desk.jpg);
 
 }
 @media only screen and (min-resolution: 192dpi) {
   .section-colection {
-    background-image: url(../images/colection/desk@2x.png) ;
+    background-image: url(../images/colection/desk@2x.jpg) ;
 }
 .icon-colection {
   width: 60px;
@@ -656,5 +677,21 @@ body {
   padding: 22px 60px;
   margin-top: 30px;
   font-size: 20px;
+}
+.team-wrapper {
+  flex-direction: row;
+  gap: 30px;
+}
+.team-content {
+  margin-top: 124px;
+}
+.team-img {
+  width: 445px;
+}
+.team-text {
+  margin-top: 20px;
+}
+.team-content {
+  gap: 20px;
 }
   }
