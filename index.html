@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 </head>
 <body>
     <header class="header">
@@ -83,14 +84,14 @@
                         <button class="button-country" type="button">Франция</button>
                     </li>
                     <li>
-                        <button class="button-country-secondary" type="button">Германия</button>
+                        <button class="button-country-secondary" type="button" country="Germany">Германия</button>
                     </li>
                     <li>
-                        <button class="button-country-secondary" type="button">Англия</button>
+                        <button class="button-country-secondary" type="button" country="England">Англия</button>
                     </li>
                 </ul>
                 </div>
-                <ul class="card-list-france" style="display: none;">
+                <ul class="card-list-france">
                     <li class="card-list-item">
                         <div class="card-list-wrap">
                             <picture>
@@ -384,7 +385,7 @@
                     </li>
                 </ul>
 
-                <ul class="card-list-germany">
+                <ul class="card-list-germany" style="display: none;">
                     <li class="card-list-item">
                         <div class="card-list-wrap">
                             <picture>
@@ -674,6 +675,7 @@
         </div>
 
         <script src="./js/modal.js" type="module"></script>
+        <script src="./js/country-galary.js" type="module"></script>
         <!-- END Modal -->
     
 </body>
