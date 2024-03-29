@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const franceBtn = document.querySelector('.button-country'); // Франция
-    const englandBtn = document.querySelector('button[country="England"]'); // Англия
-    const germanyBtn = document.querySelector('button[country="Germany"]'); // Германия
+    const englandBtn = document.querySelector('button[data-country="England"]'); // Англия
+    const germanyBtn = document.querySelector('button[data-country="Germany"]'); // Германия
   
     const franceContainer = document.querySelector('.card-list-france');
     const englandContainer = document.querySelector('.card-list-england');
